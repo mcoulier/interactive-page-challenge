@@ -80,6 +80,41 @@ counters.forEach(counter => {
     updateCount();
 });
 
+// Tabs display
+
+function openPage(pageName, elmnt,) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+    }
+    document.getElementById(pageName).style.display = "block";
+
+}
+
+
+document.getElementById("defaultOpen").click();
+
+// adding event listeners
+
+document.getElementById('Summary').addEventListener('click', () => {
+    openPage('Summary', this)
+});
+document.getElementById('Practical-info').addEventListener('click', () => {
+    openPage('Practical-info', this)
+});
+document.getElementById('Contact-info').addEventListener('click', () => {
+    openPage('Contact-info', this)
+});
+
+
+
+
+
 /*
 // Tabs menu
 
