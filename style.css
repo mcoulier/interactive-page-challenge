@@ -1,41 +1,66 @@
 .header {
     padding: 30px;
     background: lightseagreen;
-    color: whitesmoke;
+    color: darkgoldenrod;
     text-align: center;
+}
+
+.header-icon {
+    float: right;
 }
 
 h1 {
     font-size: 40px;
 }
 
+h3 {
+    border-radius: 25px;
+    background-color: powderblue;
+    padding: 10px;
+    width: 90px;
+    box-shadow: 2px 2px 5px black;
+    text-align: center;
+    margin-left: 50px;
+}
+
 .tablink {
     background-color: powderblue;
-    color: white;
+    color: darkgoldenrod;
+    border: 1px solid darkgoldenrod;
     float: left;
-    border: none;
     outline: none;
     cursor: pointer;
     padding: 14px 16px;
     font-size: 17px;
-    width: 25%;
+    width: 33%;
 }
 
 .tablink:hover {
-    background-color: black;
+    box-shadow: 1px 1px 5px black;
+    transition-duration: 0.5s;
+
 }
 
 .tabcontent {
-    color: white;
+    color: darkgoldenrod;
     padding: 100px 20px;
     height: 100%;
+
+}
+
+.tabbed-content {
+    width: 100vw;
+}
+
+.tabs {
+    width: 100%;
 }
 
 body {
     height: 100%;
     margin: 0;
     font-family: 'Mukta', sans-serif;
-    color: whitesmoke;
+    color: darkgoldenrod;
     background: lightseagreen;
 }
 .carrousel-container {
@@ -62,7 +87,7 @@ body {
     z-index: 10;
     left: 5%;
     font-size: 30px;
-    color: whitesmoke;
+    color: darkgoldenrod;
     opacity: 0.8;
     cursor: pointer;
 }
@@ -73,7 +98,7 @@ body {
     z-index: 10;
     right: 5%;
     font-size: 30px;
-    color: whitesmoke;
+    color: darkgoldenrod;
     opacity: 0.8;
     cursor: pointer;
 }
