@@ -53,6 +53,12 @@
     text-align: center;
 }
 
+.navbar {
+    background: darkgrey;
+    color: whitesmoke;
+    padding: 20px;
+}
+
 h1 {
     font-size: 30px;
 }
