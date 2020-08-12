@@ -7,15 +7,18 @@
 
 h1 {
     font-size: 40px;
-
 }
 
 .navbar {
-    overflow: hidden;
-    background: darkgrey;
+    background: powderblue;
     color: whitesmoke;
     padding: 20px;
     width: 100%;
+    margin-bottom: 10px;
+}
+
+.navbar a {
+    padding: 20px 20px;
 }
 
 .navbar a:hover {
@@ -70,10 +73,10 @@ body {
 
 .footer {
     width: 100%;
-    margin: auto;
     font-size: 15px;
-    background: darkgrey;
+    background: powderblue;
     padding: 20px;
+    margin-top: 10px;
 }
 
 .right-footer {
