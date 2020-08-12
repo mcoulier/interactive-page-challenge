@@ -19,39 +19,52 @@
     />
   </head>
 
-  <div class="header">
-    <h1>Becode Lan Party</h1>
+<div class="header">
+
+    <h1><img src="Assets/headericon.png" width="50px" height="auto">Becode Lan Party<img src="Assets/headericon.png" width="50px" height="auto"></h1>
     <p>12/08/2020</p>
-  </div>
 
-  <body>
-    <div class="tabbed-content">
-      <div class="tabs">
-        <button class="tablink" pageName="Summary" id=" defaultOpen">
-          Summary
-        </button>
-        <button class="tablink" pageName="Practical-info" id="Practical-info">
-          Practical info
-        </button>
-        <button class="tablink" pageName="Contact" id="Contact">
-          Contact form
-        </button>
-      </div>
+</div>
 
-      <div class="tabs-wrapper">
-        <div id="Summary" class="tabcontent">
-          <h4>Summary</h4>
-          <p>Text goes here</p>
+<body>
+<div class="tabbed-content">
+
+    <div class="tabs">
+        <button class="tablinks" onclick="openPage('Summary', this)">Summary</button>
+        <button class="tablinks" onclick="openPage('Practical info', this)">Practical info</button>
+        <button class="tablinks" onclick="openPage('Contact form', this)">Contact form</button>
+    </div>
+
+    <div class="tabs-wrapper">
+
+        <div id="Summary" class="tabcontent current">
+            <h4>Summary</h4>
+            <p>Come to the annual Becode Lan Party on the 12th of August.</p>
         </div>
 
-        <div id="Practical-info" class="tabcontent">
-          <h4>Practical info</h4>
-          <p>Text goes here</p>
+        <div id="Practical info" class="tabcontent">
+            <h4>Practical info</h4>
+            <p>How to get here:<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2498.643848491338!2d4.398762415158992!3d51.22563623908716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3f6591c88f09d%3A0x31d6c38718baba03!2sThe%20Beacon!5e0!3m2!1snl!2sbe!4v1597238958208!5m2!1snl!2sbe" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></p>
         </div>
 
-        <div id="Contact-form" class="tabcontent">
-          <h4>Contact form</h4>
-          <p>Text goes here</p>
+        <div id="Contact form" class="tabcontent">
+            <h4>Contact form</h4>
+            <p> <div class="container">
+            <form action="action_page.php">
+
+                <label for="name">First + last name:</label>
+                <input type="text" id="name" name="name" placeholder="Your first and last name">
+
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" placeholder="Your Email address.">
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Write your messsage here" style="height:200px"></textarea>
+
+                <input type="submit" value="Submit">
+
+            </form>
+        </div> </p>
         </div>
       </div>
     </div>
@@ -78,9 +91,15 @@
       <h3>Likes:</h3>
       <div class="counter" data-target="5000">0</div>
     </div>
-    <div class="footer">
-      <div class="left-footer">
-        © 2020
+</div>
+<div class="style-counter">
+<h3><img src="Assets/attendees-icon.png" width="15px" height="auto">Attendees:</h3>
+<div class="counter" data-target="2000">0</div>
+<h3><img src="Assets/likes-icon.png" width="15px" height="auto">Likes:</h3>
+<div class="counter" data-target="5000">0</div>
+</div>
+<div class="footer">
+    <div class="left-footer">© 2020
         <div class="right-footer">
           <a href="https://becode.org/nl/">Becode</a>
         </div>
