@@ -23,7 +23,7 @@ h3 {
     margin-left: 20px;
 }
 
-.tablink {
+.tablinks {
     background-color: powderblue;
     color: darkgoldenrod;
     border: 1px solid darkgoldenrod;
@@ -35,7 +35,7 @@ h3 {
     width: 33%;
 }
 
-.tablink:hover {
+.tablinks:hover {
     box-shadow: 1px 1px 5px black;
     transition-duration: 0.5s;
 
@@ -88,6 +88,7 @@ input[type=submit]:hover {
     box-shadow: 1px 1px 5px black;
 
 }
+
 
 .container {
     border-radius: 5px;
