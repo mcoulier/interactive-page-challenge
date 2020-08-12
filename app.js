@@ -51,7 +51,7 @@ carouselSlide.addEventListener('transitionend', () => {
 
 // Attendee counter
 
-const counters = document.querySelector('#counter');
+const AttendanceCounter = document.querySelector('#counter');
 const speed = 200;
 
 counters.forEach(counter => {
