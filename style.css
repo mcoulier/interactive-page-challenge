@@ -5,9 +5,6 @@
   text-align: center;
 }
 
-.header-icon {
-}
-
 h1 {
   font-size: 40px;
 }
@@ -130,9 +127,6 @@ input[type="submit"]:hover {
   color: darkgoldenrod;
   opacity: 0.8;
   cursor: pointer;
-}
-
-.style-counter {
 }
 
 .footer {
