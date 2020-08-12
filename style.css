@@ -63,6 +63,37 @@ body {
     color: darkgoldenrod;
     background: lightseagreen;
 }
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid darkgoldenrod;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: powderblue;
+    color: darkgoldenrod;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    box-shadow: 1px 1px 5px black;
+
+}
+
+.container {
+    border-radius: 5px;
+    padding: 20px;
+}
+
 .carrousel-container {
     width: 50%;
     margin: auto;
@@ -113,6 +144,7 @@ body {
     background: powderblue;
     padding: 20px;
     margin-top: 10px;
+    border-top: 2px solid darkgoldenrod;
 }
 
 .right-footer {
