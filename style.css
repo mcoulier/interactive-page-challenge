@@ -38,7 +38,18 @@
     cursor: pointer;
 }
 
-footer {
+.footer {
     border: 2px solid black;
     font-size: 13px;
+}
+
+.header {
+    padding: 60px;
+    background: darkslateblue;
+    color: whitesmoke;
+}
+
+h1 {
+    font-size: 30px;
+    text-align: center;
 }
