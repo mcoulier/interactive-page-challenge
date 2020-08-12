@@ -6,9 +6,7 @@
 }
 
 .header-icon {
-    float: right;
-    width: 100px;
-    height: auto;
+
 }
 
 h1 {
@@ -22,7 +20,7 @@ h3 {
     width: 90px;
     box-shadow: 2px 2px 5px black;
     text-align: center;
-    margin-left: 50px;
+    margin-left: 20px;
 }
 
 .tablink {
@@ -70,7 +68,7 @@ body {
     margin: auto;
     overflow: hidden;
     position: relative;
-    border: 5px solid black;
+    border: 2px solid darkgoldenrod;
 }
 
 .carrousel-slide {
@@ -106,7 +104,7 @@ body {
 }
 
 .style-counter {
-    border: 2px solid black;
+
 }
 
 .footer {
