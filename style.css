@@ -39,17 +39,31 @@
 }
 
 .footer {
-    border: 2px solid black;
-    font-size: 13px;
+    width: 100%;
+    margin: auto;
+    font-size: 15px;
+    background: darkgrey;
+    padding: 20px;
 }
 
 .header {
-    padding: 60px;
-    background: darkslateblue;
+    padding: 40px;
+    background: lightseagreen;
     color: whitesmoke;
+    text-align: center;
 }
 
 h1 {
     font-size: 30px;
-    text-align: center;
+}
+
+body {
+    font-family: 'Mukta', sans-serif;
+    color: whitesmoke;
+    background: lightseagreen;
+
+}
+
+.right-footer {
+    float: right;
 }
