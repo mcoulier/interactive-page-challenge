@@ -1,3 +1,33 @@
+.header {
+    padding: 40px;
+    background: lightseagreen;
+    color: whitesmoke;
+    text-align: center;
+}
+
+h1 {
+    font-size: 40px;
+
+}
+
+.navbar {
+    overflow: hidden;
+    background: darkgrey;
+    color: whitesmoke;
+    padding: 20px;
+    width: 100%;
+}
+
+.navbar a:hover {
+    background-color: black;
+    color: whitesmoke;
+}
+
+body {
+    font-family: 'Mukta', sans-serif;
+    color: whitesmoke;
+    background: lightseagreen;
+}
 .carrousel-container {
     width: 50%;
     margin: auto;
@@ -44,30 +74,6 @@
     font-size: 15px;
     background: darkgrey;
     padding: 20px;
-}
-
-.header {
-    padding: 40px;
-    background: lightseagreen;
-    color: whitesmoke;
-    text-align: center;
-}
-
-.navbar {
-    background: darkgrey;
-    color: whitesmoke;
-    padding: 20px;
-}
-
-h1 {
-    font-size: 30px;
-}
-
-body {
-    font-family: 'Mukta', sans-serif;
-    color: whitesmoke;
-    background: lightseagreen;
-
 }
 
 .right-footer {
