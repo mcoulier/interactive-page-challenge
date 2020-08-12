@@ -10,7 +10,7 @@ const nextBtn = document.querySelector('#nextBtn');
 
 //counter 
 let counter = 1;
-const size = carouselImages[0].clientWidth;
+const size = carrouselImages[0].clientWidth;
 
 carrouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px )';
 
@@ -18,7 +18,7 @@ carrouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px )';
 // event listeners
 
 nextBtn.addEventListener('click', () => {
-    if (counter >= carouselImages.length - 1) return;
+    if (counter >= carrouselImages.length - 1) return;
     carrouselSlide.style.transition = "transform 1s ease-in-out"
     counter++;
     carrouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px )';
@@ -26,22 +26,22 @@ nextBtn.addEventListener('click', () => {
 
 prevBtn.addEventListener('click', () => {
     if (counter <= 0) return;
-    carrouselSlide.style.transition = "transform 0.4s ease-in-out"
+    carrouselSlide.style.transition = "transform 1s ease-in-out"
     counter--;
     carrouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px )';
 });
 
 
-carouselSlide.addEventListener('transitionend', () => {
-    if (carrouselImages[counter].id === 'lastClone') {
+carrouselSlide.addEventListener('transitionend', () => {
+    if (carrouselImages[counter].id === 'last-clone') {
         carrouselSlide.style.transition = "none";
         counter = carrouselImages.length - 2;
         carrouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
     }
 });
 
-carouselSlide.addEventListener('transitionend', () => {
-    if (carrouselImages[counter].id === 'firstClone') {
+carrouselSlide.addEventListener('transitionend', () => {
+    if (carrouselImages[counter].id === 'first-clone') {
         carrouselSlide.style.transition = "none";
         counter = carrouselImages.length - counter;
         carrouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
@@ -51,8 +51,9 @@ carouselSlide.addEventListener('transitionend', () => {
 
 // Attendee counter
 
-const AttendanceCounter = document.querySelector('#counter');
-const speed = 200;
+const counters = document.querySelectorAll('.counter');
+
+const speed = 1000;
 
 counters.forEach(counter => {
     const updateCount = () => {
