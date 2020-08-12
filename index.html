@@ -10,16 +10,41 @@
     <script src="https://kit.fontawesome.com/19ec836880.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@600&display=swap" rel="stylesheet">
 </head>
+
 <div class="header">
     <h1>Becode Lan Party</h1>
     <p>12/08/2020</p>
 </div>
-<div class="navbar">
-    <a href="#">Link</a>
-    <a href="#">Link</a>
-    <a href="#">Link</a>
-</div>
+
 <body>
+<div class="tabbed-content">
+
+    <div class="tabs">
+        <button class="tablink" onclick="openPage('Summary', this)">Summary</button>
+        <button class="tablink" onclick="openPage('Practical info', this)">Practical info</button>
+        <button class="tablink" onclick="openPage('Contact form', this)">Contact form</button>
+    </div>
+
+    <div class="tabs-wrapper">
+
+        <div id="Summary" class="tabcontent current">
+            <h4>Summary</h4>
+            <p>Text goes here</p>
+        </div>
+
+        <div id="Practical info" class="tabcontent">
+            <h4>Practical info</h4>
+            <p>Text goes here</p>
+        </div>
+
+        <div id="Contact form" class="tabcontent">
+            <h4>Contact form</h4>
+            <p>Text goes here</p>
+        </div>
+    </div>
+
+</div>
+
 <div class="carrousel-container">
     <i class="fas fa-arrow-left" id="prevBtn"></i>
     <i class="fas fa-arrow-right" id="nextBtn"></i>
@@ -33,12 +58,12 @@
         <img src="Assets/lanparty1.jpg" id="first-clone">
     </div>
 </div>
-
+<div class="style-counter">
 <h3>Attendees:</h3>
 <div class="counter" data-target="2000">0</div>
 <h3>Likes:</h3>
 <div class="counter" data-target="5000">0</div>
-
+</div>
 <div class="footer">
     <div class="left-footer">© 2020
         <div class="right-footer">
